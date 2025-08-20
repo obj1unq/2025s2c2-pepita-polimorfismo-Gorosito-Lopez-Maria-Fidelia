@@ -69,7 +69,12 @@ object pepon{
 	}
 }
 
-
+object roque {
+  var ave = pepita
+  method alimentar(_ave){
+	return (_ave.comer(alpiste))
+  }
+}
 
 
 
