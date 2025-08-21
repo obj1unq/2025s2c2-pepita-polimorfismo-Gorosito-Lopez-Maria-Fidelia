@@ -58,11 +58,34 @@ object pepon{
 
 object roque {
   var ave = pepita
-  method alimentar(_ave){
-	return (_ave.comer(alpiste))
+  var cenasDadas = 0
+  
+  method ave(_ave){
+	ave = _ave
+	cenasDadas = 0
   }
+  method alimentar(_alimento){
+	ave.comer(_alimento)
+	cenasDadas = cenasDadas + 1
+
+  }
+  method cenas(){
+	return cenasDadas
+  }
+
 }
 
+//cenas
 
+/*
+ cuando le pregunte a roque sobre las cenas
+ quiero que devuelva la cantidad de veces que alimento al ave
+ que esta entrenando actualmente, luego de devolverme eso 
+ quiero que se resete" el contador
+*/
+
+/*
+
+*/
 
 
